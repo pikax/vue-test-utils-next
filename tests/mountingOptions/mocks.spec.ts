@@ -1,7 +1,7 @@
 import { mount, RouterLinkStub } from '../../src'
 
 describe('mocks', () => {
-  it('mocks a vuex store', async () => {
+  it.only('mocks a vuex store', async () => {
     const Foo = {
       template: `
         <div>
