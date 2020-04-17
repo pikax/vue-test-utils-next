@@ -108,6 +108,7 @@ export function mount<T extends ComponentPublicInstance>(
     const mixin = {
       beforeCreate() {
         for (const [k, v] of Object.entries(options.global?.mocks)) {
+          console.log(k, v)
           this[k] = v
           // this works
           // if (!vm.config.globalProperties[k]) {
